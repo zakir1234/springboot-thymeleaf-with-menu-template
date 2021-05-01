@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Implementation-Title: spring-boot-thymeleaf-basic-security-menu-load-f
+ rom-db
+Implementation-Version: 1.0-SNAPSHOT
+Built-By: Zakir
+Implementation-Vendor-Id: com.zakir
+Build-Jdk: 1.8.0_222
+Implementation-URL: http://projects.spring.io/spring-boot/spring-boot-
+ thymeleaf-basic-security-menu-load-from-db/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

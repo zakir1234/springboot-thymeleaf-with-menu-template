@@ -1,0 +1,23 @@
+<div id="sidebar-menu" class="main_menu_side hidden-print main_menu" data-th-fragment="sidebar-menu">
+ 
+ 
+ <div style="height:50px"></div>
+ 
+     
+    <div class="menu_section">
+    
+
+        <ul class="nav side-menu">        
+            <li th:each="menuItem : ${menuItemsList}"><a><i th:class="${menuItem.icon}"></i> <span th:text="${menuItem.name}"></span> <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">                 
+                    <li  th:each="subMenuItem : ${menuItem.subNodes}"><a><span th:text="${subMenuItem.name}"></span><span class="fa fa-chevron-down"></span></a>                 
+	                    <ul class="nav child_menu">
+	                      	<li th:each="item : ${subMenuItem.subNodes}" class="sub_menu"><a href="#"><span th:text="${item.name}"></span></a></li>	                     
+	                   </ul>
+                   </li>
+                </ul>
+             </li>
+        </ul>
+    </div>
+
+</div>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" data-layout-decorate="~{fragments/layout}">
+<head>
+
+  <title>Home</title>
+    
+</head>
+
+<body>
+<div class="right_col" role="main" data-layout-fragment="content">
+
+
+<div class="col-xs-6">
+
+<!--  <img th:src="${session.logo}" height="90" width="90" /> -->
+ <p th:text="${session.institutename}" th:unless="${session == null}" style="font-size: 18pt; font-family: inherit; margin-top: 10px">""</p>
+ <p th:text="${session.address}" th:unless="${session == null}" style="font-size: 14pt; font-family: inherit;">""</p>
+ <p th:text="${session.instituteid}" th:unless="${session == null}" style="font-size: 14pt; font-family: inherit;">""</p>
+ 
+
+</div>
+
+<div class="col-xs-6">
+
+</div>
+   
+    
+    
+</div>
+</body>
+</html>
